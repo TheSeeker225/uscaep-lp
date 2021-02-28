@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="Seeker225 AIJNWJ">
+
+        <title>{% block title %}{% endblock %} | USCAEP </title>
+        
+        <!-- Bootstrap core CSS -->
+
+        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+
+        <!-- Custom styles for this template -->
+        <link rel="icon" type="image/x-icon" href="/uscaep.ico" />
+        <link href="/css/modern-business.css" rel="stylesheet">
+
+        {% block stylesheets %}{% endblock %}
+
+    </head>
+
+    <body>
+
+        <!-- Navigation -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="{{ path('homepage') }}"> 
+                    Union des Sociétés Coopératives Agricoles Entente & Progrès
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ path('homepage') }}"> Accueil </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                A propos
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                                <a class="dropdown-item" href="{{ path('presentation') }}"> USCAEP </a>
+                                <a class="dropdown-item" href="{{ path('liste_cooperatives') }}"> Coopératives </a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Activités
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                                <a class="dropdown-item" href="{{ path('activite_detail') }}"> Agriculture </a>
+                                <a class="dropdown-item" href="{{ path('activite_detail') }}"> Elevage </a>
+                                <a class="dropdown-item" href="{{ path('activite_detail') }}"> Transformation </a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('contact') }}">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>First Slide</h3>
+                    <p>This is a description for the first slide.</p>
+                </div>
+                </div>
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Second Slide</h3>
+                    <p>This is a description for the second slide.</p>
+                </div>
+                </div>
+                <!-- Slide Three - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Third Slide</h3>
+                    <p>This is a description for the third slide.</p>
+                </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            </div>
+        </header>
+
+
+        <!-- Page Content -->
+        {% block body %}
+        {% endblock %}
+        {% block javascripts %}{% endblock %}
+        
+         <!-- Footer -->
+        <footer class="p-5 bg-warning">
+            <div class="container-fluid m-5">
+                <div class="row">
+
+                    <div class="col-md-3">
+
+                        <h4> A propos de l'USCAEP </h4>
+                        <p>
+                            L’<a href="{{ path('presentation') }}" class="text-dark">USCAEP</a> est une structure coopérative fondée en 2011 regroupant tous les producteurs agricoles,
+                             les pisciculteurs, les éleveurs des régions de la Mé et de l’Agnéby-Tiassa sous forme de <a href="{{ path('liste_cooperatives') }}" class="text-dark">coopératives</a>,
+                              avec pour finalité l’amélioration de leurs conditions de vie et de leur environnement.
+                        </p>
+
+                    </div>
+                    <div class="col-md-3">
+
+                        <h4> Nos services </h4>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-warning"> 
+                                <img src="/node_modules/bootstrap-icons/icons/tree.svg" alt="" width="21" height="21" title="Agriculture"> 
+                                <a href="{{ path('activite_detail') }}" class="text-dark">Agriculture</a>
+                            </li>
+                            <li class="list-group-item bg-warning"> 
+                                <img src="/node_modules/bootstrap-icons/icons/egg.svg" alt="" width="21" height="21" title="&Eacute;lévage"> 
+                                <a href="{{ path('activite_detail') }}" class="text-dark">&Eacute;lévage</a>
+                                
+                            </li>
+                            <li class="list-group-item bg-warning"> 
+                                <img src="/node_modules/bootstrap-icons/icons/box-seam.svg" alt="" width="21" height="21" title="Transformation"> 
+                                <a href="{{ path('activite_detail') }}" class="text-dark">Transformation de produits</a>
+                                
+                            </li>
+                            <li class="list-group-item bg-warning"> 
+                                <img src="/node_modules/bootstrap-icons/icons/collection.svg" alt="" width="21" height="21" title="Espace publicitaire"> 
+                                <a href="{{ path('market') }}" class="text-dark">Espace publicitaire</a>
+                                
+                            </li>
+                            <li class="list-group-item bg-warning"> 
+                                <img src="/node_modules/bootstrap-icons/icons/person-square.svg" alt="" width="21" height="21" title="Connexion"> 
+                                <a href="#" class="text-dark">Espace membre</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-3">
+
+                        <h4> Nos contacts </h4>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-warning"> 
+                                <img src="/node_modules/bootstrap-icons/icons/chat-square-fill.svg" alt="" width="21" height="21" title="Siège de l'USCAEP"> 
+                                Akoupé - BP 159 Akoupé
+                            </li>
+                            <li class="list-group-item bg-warning"> 
+                                <img src="/node_modules/bootstrap-icons/icons/telephone-fill.svg" alt="" width="21" height="21" title="Contacts"> 
+                                (+225) 23 54 29 16 / 08 05 48 41 / 01 50 76 64
+                            </li>
+                            <li class="list-group-item bg-warning"> 
+                                <img src="/node_modules/bootstrap-icons/icons/envelope-fill.svg" alt="" width="21" height="21" title="Bootstrap"> 
+                                (+225) 00 00 00 00 00
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-3">
+
+                        <img class="img-thumbnail" src="/img/logo.png" alt="">
+
+                    </div>
+
+                </div>
+                <p class="m-0 text-center">
+                    Copyright &copy; USCAEP <script>document.write(new Date().getFullYear());</script> - All rights reserved | Designed by <a href="https://www.linkedin.com/in/zand%C3%A9-nincekon-yoro-44281110b/" class="text-dark" target="_blank">Seeker225 AIJNWJ</a>
+                </p>
+            </div>
+            <!-- /.container -->
+        </footer>
+
+        <!-- Bootstrap core JavaScript -->
+        <!-- Node sources -->
+        <script src="/node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>    
+    </body>
+</html>

@@ -1,0 +1,201 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bienvenue !{% endblock %}
+
+{% block body %}
+
+    <main class="container-fluid p-5">
+    
+        <h1 class="my-4"> Akwaba à l'USCAEP !!! </h1>
+
+        <!-- Features Section -->
+        <div class="row">
+            <div class="col-lg-6">
+                <h2> MOT DU PRESIDENT DU CONSEIL D'ADMINISTRATION </h2>
+                <p>The Modern Business template by Start Bootstrap includes:</p>
+                <ul>
+                    <li>
+                        <strong>Bootstrap v4</strong>
+                    </li>
+                    <li>jQuery</li>
+                    <li>Font Awesome</li>
+                    <li>Working contact form with validation</li>
+                    <li>Unstyled page elements for easy customization</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+            </div>
+            <div class="col-lg-6">
+                <img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Marketing Icons Section -->
+        <div class="row">
+
+              <div class="col-md-8">
+
+                  <!-- Portfolio Section -->
+                  <h2>Nos activités</h2>
+                  <hr>
+
+                  <div class="row">
+                      <div class="col-md-4 col-sm-6 portfolio-item">
+                        <div class="card h-100">
+                          <a href="{{ path('activite_detail') }}"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                          <div class="card-body">
+                            <h3 class="card-title text-center">
+                              <a href="{{ path('activite_detail') }}"> Agriculture </a>
+                            </h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-6 portfolio-item">
+                        <div class="card h-100">
+                          <a href="{{ path('activite_detail') }}">
+                              <img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                          <div class="card-body">
+                            <h3 class="card-title text-center">
+                              <a href="{{ path('activite_detail') }}"> Elevage </a>
+                            </h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-6 portfolio-item">
+                        <div class="card h-100">
+                          <a href="{{ path('activite_detail') }}"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                          <div class="card-body">
+                            <h3 class="card-title text-center">
+                              <a href="{{ path('activite_detail') }}"> Transformation de produits </a>
+                            </h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- /.row -->
+                  
+                  <!-- Portfolio Section -->
+                  <h2>Nos coopératives</h2>
+                  <hr>
+                  <div class="row">
+                      <div class="col-md-4 col-sm-6 portfolio-item">
+                        <div class="card h-100">
+                          <a href="{{ path('coop_detail') }}"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                          <div class="card-body">
+                            <h4 class="card-title text-center">
+                              <a href="{{ path('coop_detail') }}"> Cooperative One </a>
+                            </h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-6 portfolio-item">
+                        <div class="card h-100">
+                          <a href="{{ path('coop_detail') }}"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                          <div class="card-body">
+                            <h3 class="card-title text-center">
+                              <a href="{{ path('coop_detail') }}"> Cooperative Two </a>
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-6 portfolio-item">
+                        <div class="card h-100">
+                          <a href="{{ path('coop_detail') }}"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                          <div class="card-body">
+                            <h4 class="card-title text-center">
+                              <a href="{{ path('coop_detail') }}"> Cooperative Three </a>
+                            </h4>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- /.row -->
+
+              </div>
+              
+              <!-- Sidebar Widgets Column -->
+              <div class="col-md-4">
+
+                  <!-- Search Widget -->
+                  <div class="card m-5 text-center">
+                      <div class="card-body">
+                          <h3 class="card-title"> DES PRODUITS POUR VOUS </h3>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
+                          <a class="btn btn-success" href="{{ path('market') }}"> Accéder à l'espace </a>
+                      </div>
+                  </div>
+
+                  <!-- Search Widget -->
+                  <div class="card m-5 text-center">
+                      <div class="card-body">
+                          <h3 class="card-title"> PRESENTATION </h3>
+                          <p class="card-text">
+                              Lorem ipsum dolor sit amet, consectetur 
+                              adipisicing elit. Possimus aut mollitia eum
+                              ipsum fugiat odio officiis odit.
+                          </p>
+                          <a href="#">Voir plus</a>
+                      </div>
+                  </div>
+
+                  <!-- Search Widget -->
+                  <div class="card m-5 text-center">
+                      <div class="card-body">
+                          <h3 class="card-title"> ESPACE MEMBRE </h3>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
+                          <a class="btn btn-warning" href="#"> Se connecter </a>
+                      </div>
+                  </div>
+
+              </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Call to Action Section -->
+        <div class="row">
+
+            <!-- Our Customers -->
+            <h2>Clients & Partenaires</h2>
+            <hr>
+
+            <div class="row">
+                <div class="col-lg-2 col-sm-4 mb-4">
+                    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+                </div>
+                <div class="col-lg-2 col-sm-4 mb-4">
+                    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+                </div>
+                <div class="col-lg-2 col-sm-4 mb-4">
+                    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+                </div>
+                <div class="col-lg-2 col-sm-4 mb-4">
+                    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+                </div>
+                <div class="col-lg-2 col-sm-4 mb-4">
+                    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+                </div>
+                <div class="col-lg-2 col-sm-4 mb-4">
+                    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <div class="col-md-8">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+            </div>
+            <div class="col-md-4">
+                <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
+            </div>
+        </div>
+
+    </main>
+
+{% endblock %}
